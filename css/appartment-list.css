@@ -1,0 +1,194 @@
+/* ****Apartement List****  */
+
+
+.apartment-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.apartment-list.city a {
+    font-weight: bold;
+}
+
+.apartment-list>div {
+    background: var(--darkgrey);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+section-2 .city {
+    flex-basis: 66%;
+}
+section-2 .city a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+section-2 .popular {
+    flex-basis: 33%;
+}
+
+/**********List Apartement**************/
+
+.city-apartment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+/********** Apartment Card**************/
+
+.apartment-list .popular-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+
+.appartment-card {
+    background: white;
+    border-radius: 25px;
+    padding: 0.5rem;
+    box-shadow: 0 0 16px #00000021;
+    flex-grow: 1;
+}
+
+section-2 .appartment-card img {
+    border-radius: 25px 25px 0 0;
+    height: 10rem;
+    width: 100%;
+}
+
+.appartment-card p,
+.appartment-card h3 {
+    margin: 0.5rem;
+}
+
+.grey {
+    color: var(--darkgrey);
+}
+
+.appartment {
+    width: 14rem;
+}
+
+/*****Popular*****/
+
+.popular {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+/*****Popular Card*****/
+
+.popular-flex .appartment-card img {
+    border-radius: 25px 0 0 25px;
+    margin-right: 0.5rem;
+    object-fit: cover;
+    min-width: 40%;
+    min-height: 100%;
+}
+
+.popular-text {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-card {
+    display: flex;
+    min-width: 20rem;
+    max-height: 11rem;
+}
+
+.popular-card .card-stars {
+    display: flex;
+    margin-top: auto;
+}
+
+/*************************************/
+/*********MEDIA QUERIES***********/
+/*************************************/
+
+/********* ipad ***********/
+
+@media (max-width:1015px) {
+    
+    /* ****Apartement List****  */
+    
+    section-2 .apartment-list {
+        flex-direction: column;
+    }
+    section-2 .city a {
+        display: none;
+    }
+
+    /*****Popular*****/
+
+    .apartment-list .popular-flex {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 1rem;
+
+    }
+
+    .popular-card {
+        min-width: auto;
+        width: 33%;
+    }
+
+    .popular h2 {
+        margin: 1rem 2rem;
+    }
+
+    .popular-card h3 {
+        font-size: 1.1rem;
+        margin: 0.1rem;
+    }
+}
+
+/********* phone ***********/
+
+@media (max-width:825px) {
+    section-2 .apartment-list {
+        flex-direction: column-reverse;
+    }
+
+    .apartment-list .popular-flex {
+        flex-direction: column;
+    }
+
+    .city-apartment-list {
+        flex-direction: column;
+    }
+
+    .popular-card,
+    .appartment-card {
+        width: 100%;
+    }
+
+    .appartment-card img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.popular-card h3,
+.appartment-card h3 {
+    font-size: 1.3rem;
+    margin: 0.1rem;
+}
+
+.popular-card img {
+    min-height: 100%;
+}

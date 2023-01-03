@@ -1,0 +1,75 @@
+/* ****Activity****  */
+
+section-3 h2 {
+    margin: 3rem 2rem 1rem;
+}
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+}
+
+/********** Activity Card**************/
+
+.activity-card,
+.big-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 0.5rem;
+    box-shadow: 0 0 16px #00000021;
+    padding: 0;
+    margin-bottom: 3rem;
+    height: 30rem;
+    width: 22%;
+}
+
+.activity-card h3 {
+    padding: 1rem;
+}
+
+.activity-card img {
+    border-radius: 25px 25px 0 0;
+    flex-basis: 84%;
+    object-fit: cover;
+}
+
+/*************************************/
+/*********MEDIA QUERIES***********/
+/*************************************/
+
+/********* ipad ***********/
+
+@media (max-width:1015px) {
+
+    .activity-card {
+        height: 20rem;
+        width: 25%;
+        margin: 1rem;
+    }
+
+    .activity-card h3 {
+        margin: 0.5rem 0;
+    }
+
+    .activity-card img {
+        min-height: 14rem;
+        max-height: 14rem;
+        width: 100%;
+    }
+}
+
+/********* phone ***********/
+
+@media (max-width:825px) {
+    .activity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+    .activity-card {
+        height: 18rem;
+        width: 100%;
+    }
+}

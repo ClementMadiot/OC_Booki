@@ -1,0 +1,77 @@
+/**********Nav Bar**************/
+body header {
+    padding: 0 3rem;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+nav a {
+    padding: 2rem;
+    border-top: 3px solid transparent;
+}
+
+nav a:first-child {
+    color: var(--blue);
+}
+
+nav a:hover {
+    color: var(--blue);
+    font-weight: bold;
+    border-top-color: var(--blue);
+}
+
+nav img {
+    height: 30px;
+    margin-right: auto;
+}
+
+.signup {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.sub-nav {
+    display: flex;
+}
+
+/*************************************/
+/*********MEDIA QUERIES***********/
+/*************************************/
+
+/********* ipad ***********/
+
+@media (max-width:992px) {
+
+    /**********Nav Bar**************/
+
+    .sub-nav {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .sub-nav a {
+        flex-basis: 50%;
+        border-bottom: 3px solid var(--lightblue);
+    }
+    .sub-nav a:hover {
+        border-bottom-color: var(--blue);
+        border-top-color: transparent;
+    }
+
+}
+
+/********* phone ***********/
+
+
+@media (max-width:768px) {
+
+    nav img {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+}

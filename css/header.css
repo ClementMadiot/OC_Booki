@@ -1,0 +1,167 @@
+/* ******HEADER *******/
+
+main h1,
+main p {
+    margin: 1.3rem 0;
+}
+
+/*********Search Button*********/
+
+.search-form {
+    display: flex;
+}
+
+.search-form>* {
+    padding: 1rem 1.5rem;
+}
+
+.search-form i {
+    background: var(--darkgrey);
+    color: black;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-form input {
+    flex-basis: 15rem;
+    border: 1px solid var(--darkgrey);
+    overflow: auto;
+}
+
+.search-form input::placeholder {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.search-form button {
+    background: var(--blue);
+    color: white;
+    border: var(--blue);
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.search-form button:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.fa-solid.fa-magnifying-glass {
+    display: none;
+}
+
+/**********Filter List**************/
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem 2rem;
+    flex-wrap: wrap;
+}
+
+.filter {
+    border: 3px solid var(--darkgrey);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.filter i {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter span {
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0 0.8rem;
+    width: 170px;
+}
+
+.filter:hover {
+    background: var(--lightblue);
+    cursor: pointer;
+}
+
+/* ****Result Message**** */
+
+.result-message {
+    display: flex;
+    align-items: center;
+}
+
+.result-message i {
+    border: 1px solid var(--darkgrey);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*************************************/
+/*********MEDIA QUERIES***********/
+/*************************************/
+
+/********* ipad ***********/
+
+@media (max-width:992px) {
+
+    /*********Search Button*********/
+    .search-form .search-text {
+        display: none;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        display: flex;
+        background: inherit;
+        color: white;
+    }
+}
+
+/********* phone ***********/
+
+@media (max-width:825px) {
+    section-1,
+    .heading {
+        display: flex;
+        flex-direction: column;
+        text-align: inherit;
+        align-items: inherit;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .filter-list {
+        padding: 1rem;
+
+    }
+
+    .result-message {
+        justify-content: center;
+    } 
+
+    .search-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-form input {
+        flex-basis: 18rem;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .fa-sharp.fa-solid.fa-location-dot {
+        display: flex;
+        align-items: center
+    }
+}
