@@ -62,16 +62,8 @@ nav img {
         border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
-
-}
-
-/********* phone ***********/
-
-
-@media (max-width:768px) {
-
     nav img {
-        margin: 0 auto;
+        margin: auto;
         margin-top: 2rem;
     }
 }

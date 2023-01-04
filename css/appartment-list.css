@@ -6,10 +6,6 @@
     gap: 2rem;
 }
 
-.apartment-list.city a {
-    font-weight: bold;
-}
-
 .apartment-list>div {
     background: var(--darkgrey);
     padding: 1rem;
@@ -20,13 +16,14 @@ section-2 .city {
     flex-basis: 66%;
 }
 section-2 .city a {
-    font-weight: bold;
     font-size: 1.2rem;
-    margin: 2rem;
 }
 
 section-2 .popular {
     flex-basis: 33%;
+}
+.bold {
+    font-weight: bold;
 }
 
 /**********List Apartement**************/
@@ -49,10 +46,10 @@ section-2 .popular {
     flex-basis: 100%;
 }
 
-.appartment-card {
+.appartment-card  {
     background: white;
     border-radius: 25px;
-    padding: 0.5rem;
+    padding: 0.4rem;
     box-shadow: 0 0 16px #00000021;
     flex-grow: 1;
 }
@@ -61,6 +58,8 @@ section-2 .appartment-card img {
     border-radius: 25px 25px 0 0;
     height: 10rem;
     width: 100%;
+    object-fit: cover;
+
 }
 
 .appartment-card p,
@@ -90,6 +89,10 @@ section-2 .appartment-card img {
 }
 
 /*****Popular Card*****/
+.popular-card,
+.appartment-card :hover {
+    cursor:pointer;
+}
 
 .popular-flex .appartment-card img {
     border-radius: 25px 0 0 25px;
@@ -103,6 +106,7 @@ section-2 .appartment-card img {
     flex-basis: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center
 }
 
 .popular-card {
@@ -129,33 +133,21 @@ section-2 .appartment-card img {
     section-2 .apartment-list {
         flex-direction: column;
     }
-    section-2 .city a {
-        display: none;
-    }
 
     /*****Popular*****/
 
     .apartment-list .popular-flex {
         flex-direction: row;
-        gap: 2rem;
-        margin: 1rem;
-
+        margin: 1rem 0 0;
     }
 
     .popular-card {
         min-width: auto;
-        width: 33%;
+        width: 100%;
     }
-
-    .popular h2 {
-        margin: 1rem 2rem;
+    .popular-flex .appartment-card img {
+        max-width: 6rem;
     }
-
-    .popular-card h3 {
-        font-size: 1.1rem;
-        margin: 0.1rem;
-    }
-}
 
 /********* phone ***********/
 
@@ -183,12 +175,3 @@ section-2 .appartment-card img {
     }
 }
 
-.popular-card h3,
-.appartment-card h3 {
-    font-size: 1.3rem;
-    margin: 0.1rem;
-}
-
-.popular-card img {
-    min-height: 100%;
-}
