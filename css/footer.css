@@ -4,22 +4,22 @@ footer {
 .footer-block {
     display: flex;
     background: var(--darkgrey);
+    justify-content: space-evenly;
+
 }
 .footer-about {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    line-height: 2.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
 }
 .footer-about h4 {
-    font-size: 1.8rem;
-    margin: 3rem 0 2rem;
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem;
     text-transform: capitalize;
 }
 .footer-about li {
     list-style: none;
-    font-weight: 600;
-    font-size: 1.2rem;
 }
 
 /*************************************/
@@ -32,9 +32,6 @@ footer {
 
     .footer-about h4 {
         font-size: 1.3rem;
-    }
-    .footer-about li {
-        font-size: 1rem;
     }
 }
 /********* phone ***********/

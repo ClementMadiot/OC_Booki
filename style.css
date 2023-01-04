@@ -35,7 +35,7 @@ a {
     color: inherit;
 }
 i {
-    color: var(--blue);  /*!stop repetition*/
+    color: var(--blue);  
 }
 
 main {
