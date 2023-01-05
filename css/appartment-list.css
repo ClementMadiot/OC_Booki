@@ -39,10 +39,6 @@ section-2 .popular {
 
 /********** Apartment Card**************/
 
-section-2 .city {
-    background: white;
-} 
-
 .apartment-list .popular-flex {
     display: flex;
     flex-direction: column;
@@ -167,6 +163,9 @@ section-2 .appartment-card img {
     section-2 .apartment-list {
         flex-direction: column-reverse;
     }
+    section-2 .city {
+        background: white;
+    } 
 
     .apartment-list .popular-flex {
         flex-direction: column;

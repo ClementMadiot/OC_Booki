@@ -47,6 +47,10 @@ nav img {
 
 @media (max-width:992px) {
 
+   body header {
+        padding: 0;
+    }
+
     /**********Nav Bar**************/
 
     .sub-nav {
