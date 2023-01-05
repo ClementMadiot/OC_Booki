@@ -2,6 +2,7 @@
 body header {
     padding: 0 3rem;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -47,7 +48,7 @@ nav img {
 
 @media (max-width:992px) {
 
-   body header {
+    body header {
         padding: 0;
     }
 
@@ -62,10 +63,12 @@ nav img {
         flex-basis: 50%;
         border-bottom: 3px solid var(--lightblue);
     }
+
     .sub-nav a:hover {
         border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
+
     nav img {
         margin: auto;
         margin-top: 2rem;

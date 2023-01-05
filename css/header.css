@@ -60,7 +60,7 @@ main p{
 
 /**********Filter List**************/
 
-section-1 h2 {
+.filter-list h2 {
     font-size: 1.2rem;
 }
 
@@ -131,7 +131,6 @@ section-1 h2 {
     /*********Search Button*********/
 
     main h1 {
-        margin:auto;
         margin-top: 2rem;
     }
     .filter-list h2 {
