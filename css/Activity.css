@@ -1,12 +1,21 @@
 /* ****Activity****  */
 
 #activites {
+    display: flex;
     margin: 3rem 2rem 1rem;
+    flex-basis: 100%;
+    width: 100%;;
 }
-
 .activity {
     display: flex;
     justify-content: space-between;
+}
+.activity .activities-title {
+    display: flex;
+    flex-direction: column;
+}
+.activity>article {
+    flex-wrap: nowrap;
 }
 
 /********** Activity Card**************/

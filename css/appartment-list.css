@@ -6,7 +6,7 @@
     gap: 2rem;
 }
 
-.apartment-list>article {
+.apartment-list>section {
     background: var(--darkgrey);
     border-radius: 1rem;
 }
