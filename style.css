@@ -37,6 +37,9 @@ a {
 i {
     color: var(--blue);  
 }
+li {
+    list-style-type: none;
+}
 
 main {
     padding: 0 2rem;
@@ -45,12 +48,8 @@ main {
 /*************************************/
 /*********MEDIA QUERIES***********/
 /*************************************/
-@media (max-width:825px) {
+@media (max-width: 768px) {
 main {
     padding: 0;
-}
-
-section-2 {
-    padding: 1rem;
 }
 }

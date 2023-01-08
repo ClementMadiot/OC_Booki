@@ -12,20 +12,18 @@
 </head>
 
 <!-- ***NAVBAR**** -->
-
 <body>
     <header>
         <nav>
             <img src="./assets/images/logo/Booki.png" alt="logo-booki">
-            <div class="sub-nav">
-                <a href="#hebergement">Hébergements</a>
-                <a href="#activites">Activités</a>
-            </div>
+            <ul class="sub-nav">
+                <li><a href="#hebergement">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
         </nav>
     </header>
 
     <!-- ***Heading*** -->
-
     <main>
         <section class="heading">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -33,7 +31,6 @@
         </section>
 
         <!-- ***Search Form*** -->
-
         <form class="search-form">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
             <input type="text" placeholder="Marseille, France">
@@ -44,7 +41,6 @@
         </form>
 
         <!--****Filter List**** -->
-
         <section class="filter-list">
             <h2>Filtres</h2>
             <div class="filter">
@@ -66,18 +62,16 @@
         </section>
 
         <!-- ****Result Message****-->
-
         <div class="result-message">
             <i class="fa-solid fa-info"></i>
             <p> Plus de 500 logement sont disponible dans cette ville</p>
         </div>
 
         <!--****Apartement List**** -->
-
-        <div class="apartment-list">
-            <section class="city">
+        <div class="containers-apartments">
+            <section class="hebergement">
                 <h2 id="hebergement">Hébergement à Marseille</h2>
-                <div class="city-apartment-list">
+                <div class="hebergement-flex">
 
                     <!--? 1 container -->
                     <a class="appartment-card appartment " href="#">
@@ -181,13 +175,12 @@
                         </article>
                     </a>
                 </div>
-                <a class="bold" href="#">
+                <a class+=";" href="#">
                     <h4>Afficher plus</h4>
                 </a>
             </section>
 
             <!--****Popular List**** -->
-
             <section class="popular">
                 <h2>Les plus populaires
                     <i class="fas fa-chart-line"></i>
@@ -256,7 +249,6 @@
         </div>
 
         <!--****Activities**** -->
-
         <section class="activities">
             <h2 id="activites">Activités à Marseille</h2>
             <div class="activity">
@@ -266,7 +258,7 @@
                     <h3>Vieux-Port</h3>
                 </article>
                 <!-- //2 card -->
-                <article class="activity-card big-card { ">
+                <article class="activity-card { ">
                     <img src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Château">
                     <h3>Fort de Pomègues</h3>
                 </article>
@@ -286,7 +278,6 @@
     </main>
 
     <!--****Footer**** -->
-
     <footer>
         <div class="footer-block">
             <article class="footer-about">

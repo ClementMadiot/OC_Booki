@@ -20,8 +20,7 @@
 
 /********** Activity Card**************/
 
-.activity-card,
-.big-card {
+.activity-card {
     display: flex;
     flex-direction: column;
     border-radius: 25px;
@@ -48,19 +47,16 @@
 /*************************************/
 
 /********* ipad ***********/
-
-@media (max-width:1015px) {
+@media (max-width: 992px) {
 
     .activity-card {
         height: 20rem;
         width: 25%;
         margin: 1rem;
     }
-
     .activity-card h3 {
         margin: 0.5rem 0;
     }
-
     .activity-card img {
         min-height: 14rem;
         max-height: 14rem;
@@ -70,13 +66,15 @@
 
 /********* phone ***********/
 
-@media (max-width:825px) {
+@media (max-width:768px) {
+
     .activity {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2em;
     }
+
     .activity-card {
         height: 18rem;
         width: 100%;

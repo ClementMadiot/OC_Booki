@@ -1,6 +1,6 @@
 /**********Nav Bar**************/
 body header {
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 nav {
@@ -11,16 +11,13 @@ nav {
     margin: 0;
 }
 
-nav a {
+nav li {
     padding: 2rem;
     border-top: 3px solid transparent;
+    
 }
 
-nav a:first-child {
-    color: var(--blue);
-}
-
-nav a:hover {
+nav li:hover {
     color: var(--blue);
     font-weight: bold;
     border-top-color: var(--blue);
@@ -29,11 +26,6 @@ nav a:hover {
 nav img {
     height: 30px;
     margin-right: auto;
-}
-
-.signup {
-    font-weight: bold;
-    color: var(--blue);
 }
 
 .sub-nav {
@@ -59,12 +51,12 @@ nav img {
         text-align: center;
     }
 
-    .sub-nav a {
+    .sub-nav li {
         flex-basis: 50%;
         border-bottom: 3px solid var(--lightblue);
     }
 
-    .sub-nav a:hover {
+    .sub-nav li:hover {
         border-bottom-color: var(--blue);
         border-top-color: transparent;
     }
