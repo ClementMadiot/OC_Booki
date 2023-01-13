@@ -2,8 +2,7 @@
 
 #activites {
     display: flex;
-    margin: 3rem 2rem 1rem;
-    flex-basis: 100%;
+    margin: 3rem 0 1rem;
     width: 100%;;
 }
 .activity {
@@ -34,6 +33,7 @@
 
 .activity-card h3 {
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .activity-card img {
@@ -54,9 +54,7 @@
         width: 25%;
         margin: 1rem;
     }
-    .activity-card h3 {
-        margin: 0.5rem 0;
-    }
+
     .activity-card img {
         min-height: 14rem;
         max-height: 14rem;
@@ -72,7 +70,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2em;
     }
 
     .activity-card {

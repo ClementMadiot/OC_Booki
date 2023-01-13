@@ -48,5 +48,9 @@ footer {
     .footer-about {
         margin: 0 5rem ;
     }
-    
+}
+@media (max-width:331px) {
+    footer {
+        display: block;
+    }
 }

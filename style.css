@@ -21,7 +21,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 body {
@@ -40,16 +40,12 @@ i {
 li {
     list-style-type: none;
 }
+h2 {
+    font-size: 1.4rem;
+}
 
-main {
+main>section,
+main>form {
     padding: 0 2rem;
 }
 
-/*************************************/
-/*********MEDIA QUERIES***********/
-/*************************************/
-@media (max-width: 768px) {
-main {
-    padding: 0;
-}
-}

@@ -66,3 +66,8 @@ nav img {
         margin-top: 2rem;
     }
 }
+@media (max-width:768px) {
+    nav li {
+        padding: 2rem 0;
+    }
+}
